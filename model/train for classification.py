@@ -31,8 +31,10 @@ batch_size=64
 t1 = datetime.now().strftime('%Y-%m-%d-%H:%M:%S')
 names = ['first']
 name=names[0]
-train=np.load('../dataset/train/train_set.npz')
-X_tra,y_tra = train['X_tra'], train['y_tra']
+# train=np.load('../dataset/train/train_set.npz')
+# X_tra,y_tra = train['X_tra'], train['y_tra']
+train = np.load('../dataset/external_testing_dataset/ires_activity.npz')
+X_tra,y_tra = train['X'], train['y']
 class_weight = class_weight.compute_class_weight(class_weight='balanced',classes=np.unique(y_tra),y=y_tra.reshape(-1))
 cw = dict(enumerate(class_weight))
 #print(cw)
