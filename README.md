@@ -42,3 +42,7 @@ python DeepIRES.py -i 5utr_independent.fa -o 5utr
 ```
 There are four columns in the prediction results tabular：sequence name, IRES score, the start locations of region may contain IRES, the termination locations of region may contain IRES.
 
+### Notes for Green Lab Research
+This repository is a fork of the DeepIRES repository that implements code testing the SANDSTORM model. 
+the `Sandstorm` folder stores code defining the SANDSTORM model alongside its utility functions as well as Jupyter notebooks analyzing the performance of the SANDSTORM model on DeepIRES's training data as well as evaluating the outputs from hidden layers of the SANDSTORM model.
+Furthermore, there are notebooks in the `model` folder that tests DeepIRES's performance as well as analyzing the outputs from hidden layers from DeepIRES.
