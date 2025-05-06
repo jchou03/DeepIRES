@@ -46,3 +46,5 @@ There are four columns in the prediction results tabular：sequence name, IRES s
 This repository is a fork of the DeepIRES repository that implements code testing the SANDSTORM model. 
 the `Sandstorm` folder stores code defining the SANDSTORM model alongside its utility functions as well as Jupyter notebooks analyzing the performance of the SANDSTORM model on DeepIRES's training data as well as evaluating the outputs from hidden layers of the SANDSTORM model.
 Furthermore, there are notebooks in the `model` folder that tests DeepIRES's performance as well as analyzing the outputs from hidden layers from DeepIRES.
+
+The `data_subsets` folder stores different subsets of the IRES sequences of interest. All sequenes were put through DeepIRES with different activation thresholds, then a TSNE was performed on the hidden outputs from DeepIRES and sections of interest were extracted. `sandstorm_dense_4_output.csv` contains a subset of sequences that a hidden layer in Sandstorm identified as a cluster with more active sequences.
